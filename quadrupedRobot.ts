@@ -1,4 +1,4 @@
-//% color="#5c7cfa" weight=10 icon="\u07DC"
+//% color="#49cade" weight=10 icon="\u07DD" block="Dino Robot"
 namespace QuadrupedRobot{
     export enum TurnChoice {
         //% block=Left
