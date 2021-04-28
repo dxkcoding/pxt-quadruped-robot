@@ -31,7 +31,9 @@ namespace QuadrupedRobot{
         //% block=Fight
         Fight = 'd',
         //% block=PushUp
-        PushUp = 'f'
+        PushUp = 'f',
+        //% block=Dormant
+        Dormant = 'g'
     }
 
     export enum DanceChoice {
@@ -58,42 +60,35 @@ namespace QuadrupedRobot{
     //% blockId=turnblock block="Turn %turn"
     //% weight=99 blockGap=40
     export function turnblock(turn:TurnChoice): void {
-        let str = `R ${turn}`
+        let str = `${turn}`
         serial.writeLine(str)
     }
 
     //% blockId=moveblock block="Move %move"
     //% weight=98 blockGap=40
     export function moveblock(move:MoveChoice): void {
-        let str = `R ${move}`
+        let str = `${move}`
         serial.writeLine(str)
     }
 
     //% blockId=stayblock block="Stay %stay"
     //% weight=97 blockGap=40
     export function stayblock(stay:StayChoice): void {
-        let str = `R ${stay}`
-        serial.writeLine(str)
-    }
-
-    //% blockId=sleepblock block="Robot Sleep"
-    //% weight=96 blockGap=40
-    export function sleepblock(): void {
-        let str = `R g`
+        let str = `${stay}`
         serial.writeLine(str)
     }
 
     //% blockId=actionblock block="Set Action %action"
-    //% weight=95 blockGap=40
+    //% weight=96 blockGap=40
     export function actionblock(action:ActionChoice): void {
-        let str = `R ${action}`
+        let str = `${action}`
         serial.writeLine(str)
     }
 
     //% blockId=danceblock block="Dance %dance"
-    //% weight=94 blockGap=40
+    //% weight=95 blockGap=40
     export function danceblock(dance:DanceChoice): void {
-        let str = `R ${dance}`
+        let str = `${dance}`
         serial.writeLine(str)
     }
 }
