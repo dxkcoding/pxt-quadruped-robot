@@ -60,35 +60,35 @@ namespace quadrupedRobot{
     //% blockId=turnblock block="Turn %turn"
     //% weight=99 blockGap=40
     export function turnblock(turn:TurnChoice): void {
-        let str = `${turn}`
+        let str = `R ${turn}`
         serial.writeLine(str)
     }
 
     //% blockId=moveblock block="Move %move"
     //% weight=98 blockGap=40
     export function moveblock(move:MoveChoice): void {
-        let str = `${move}`
+        let str = `R ${move}`
         serial.writeLine(str)
     }
 
     //% blockId=stayblock block="Stay %stay"
     //% weight=97 blockGap=40
     export function stayblock(stay:StayChoice): void {
-        let str = `${stay}`
+        let str = `R ${stay}`
         serial.writeLine(str)
     }
 
     //% blockId=actionblock block="Set Action %action"
     //% weight=96 blockGap=40
     export function actionblock(action:ActionChoice): void {
-        let str = `${action}`
+        let str = `R ${action}`
         serial.writeLine(str)
     }
 
     //% blockId=danceblock block="Dance %dance"
     //% weight=95 blockGap=40
     export function danceblock(dance:DanceChoice): void {
-        let str = `${dance}`
+        let str = `R ${dance}`
         serial.writeLine(str)
     }
 }
