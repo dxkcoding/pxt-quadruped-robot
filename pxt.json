@@ -12,7 +12,7 @@
         "main.blocks",
         "main.ts",
         "quadrupedRobot.ts",
-        "_locales/zh/quadrupedRobot-strings.json"
+        "_locales/zh/pxt-quadruped-robot-strings.json"
     ],
     "testFiles": [
         "test.ts"

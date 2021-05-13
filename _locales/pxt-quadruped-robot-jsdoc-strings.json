@@ -1,0 +1,3 @@
+{
+  "quadrupedRobot.dinoaiInit": "init serial port\r\nTx pin: SerialPin.P1\r\nRx pin: SerialPin.P2"
+}
