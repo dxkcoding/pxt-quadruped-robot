@@ -11,7 +11,8 @@
         "README.md",
         "main.blocks",
         "main.ts",
-        "quadrupedRobot.ts"
+        "quadrupedRobot.ts",
+        "_locales/zh/quadrupedRobot-strings.json"
     ],
     "testFiles": [
         "test.ts"
